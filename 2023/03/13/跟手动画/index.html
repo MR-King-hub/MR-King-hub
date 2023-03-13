@@ -10,18 +10,18 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/03/10/mr-king/"/>
+    <link rel="canonical" href="http://example.com/2023/03/13/跟手动画/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="跟手动画原理">
+    <meta property="og:title" content="跟手动画">
     <meta property="og:description" content="Hexo Theme Redefine">
-    <meta property="og:url" content="http://example.com2023/03/10/MR-King/">
+    <meta property="og:url" content="http://example.com2023/03/13/跟手动画/">
     
     <meta property="og:site_name" content="Theme Redefine">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="跟手动画原理">
+    <meta name="twitter:title" content="跟手动画">
     <meta name="twitter:description" content="Hexo Theme Redefine">
     <meta name="twitter:image" content="/images/redefine-logo.svg">
     <!--- Icon Part-->
@@ -32,7 +32,7 @@
     
     <title>
         
-            跟手动画原理 -
+            跟手动画 -
         
         Theme Redefine
     </title>
@@ -181,7 +181,7 @@
             
             
                 <div class="article-title">
-                    <h1 class="article-title-regular">跟手动画原理</h1>
+                    <h1 class="article-title-regular">跟手动画</h1>
                 </div>
             
                 
@@ -203,31 +203,20 @@
                             <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="pc">2023-03-10 18:24</span>
-        <span class="mobile">2023-03-10 18:24</span>
+        <span class="pc">2023-03-13 10:32:57</span>
+        <span class="mobile">2023-03-13 10:32</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-10 19:22:46</span>
-            <span class="mobile">2023-03-10 19:22</span>
+            <span class="pc">2023-03-13 10:36:29</span>
+            <span class="mobile">2023-03-13 10:36</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
     
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">第一篇博客</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
 
     
@@ -252,7 +241,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://xiaomi.f.mioffice.cn/space/api/box/stream/download/asynccode/?code=NTJhN2JlMmY4ZTJmNDRiYjZlZTkwZThiMTVhYzBmZThfa1RDcE5ENTFURkJZM0RJSWUxWXNadGtxRHJBYWx3eWJfVG9rZW46Ym94azRwQlhMSjVLSW1QZkhXNXI0QTduVGRkXzE2Nzg0NDU0OTI6MTY3ODQ0OTA5Ml9WNA"
+                     data-src="/2023/03/13/%E8%B7%9F%E6%89%8B%E5%8A%A8%E7%94%BB/Api.png"
                       alt="img"
                 ></p>
 <div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> target = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.target&quot;</span>)</span><br><span class="line"></span><br><span class="line"> <span class="comment">//IntersectionObserver构造器的callback函数</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">callback</span> = (<span class="params">entries</span>) =&gt;&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(entries[<span class="number">0</span>].<span class="property">intersectionRatio</span>)</span><br><span class="line">  <span class="keyword">if</span> (entries[<span class="number">0</span>].<span class="property">intersectionRatio</span> &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">style</span>.<span class="property">backgroundColor</span> = <span class="string">&#x27;#333&#x27;</span>;</span><br><span class="line">    <span class="comment">// </span></span><br><span class="line">    <span class="comment">// observer.disconnect()</span></span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">style</span>.<span class="property">backgroundColor</span> = <span class="string">&#x27;#fff&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//IntersectionObserver构造器的option函数</span></span><br><span class="line"> <span class="keyword">const</span> option = &#123;</span><br><span class="line">     <span class="attr">root</span>:root <span class="comment">//用作边界的视口，默认为视口</span></span><br><span class="line">     rootMargin：<span class="string">&quot;0px 0px 0px 0px&quot;</span> <span class="comment">//改变边界视口的检测范围，类似于margin</span></span><br><span class="line">     threshold：[<span class="number">0</span>,<span class="number">0.1</span>]或者<span class="number">0</span> <span class="comment">//数组或具体值,当相交比例越过这些值，触发callback函数</span></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//通过IntersectionObserver构造器构造一个新的IntersectionObserver对象</span></span><br><span class="line"><span class="keyword">let</span> observer = <span class="keyword">new</span> <span class="title class_">IntersectionObserver</span>(callback,option)</span><br><span class="line"></span><br><span class="line"> <span class="comment">//该对象拥有四个方法</span></span><br><span class="line">observer.<span class="title function_">observe</span>(target)<span class="comment">//绑定需要检测的元素target，可绑定多个</span></span><br><span class="line">observer.<span class="title function_">observe</span>(target2)</span><br><span class="line">observer.<span class="title function_">unobserve</span>(target)<span class="comment">//解绑对应元素</span></span><br><span class="line">observer.<span class="title function_">takeRecords</span>()<span class="comment">// 返回监听的数组</span></span><br><span class="line">observer.<span class="title function_">disconnected</span>()<span class="comment">//解除所有的监听</span></span><br></pre></td></tr></table></figure></div>
@@ -311,11 +300,11 @@
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：跟手动画原理</li>
+        <li>Post title：跟手动画</li>
         <li>Post author：The Redefine Team</li>
-        <li>Create time：2023-03-10 18:24:00</li>
+        <li>Create time：2023-03-13 10:32:57</li>
         <li>
-            Post link：https://redefine.ohevan.com/2023/03/10/MR-King/
+            Post link：https://redefine.ohevan.com/2023/03/13/跟手动画/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -327,35 +316,27 @@
             
 
             
-                <ul class="post-tags-box">
-                    
-                        <li class="tag-item">
-                            <a href="/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">#第一篇博客</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            
 
             
 
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                            rel="prev"
-                            href="/2023/03/13/%E8%B7%9F%E6%89%8B%E5%8A%A8%E7%94%BB/"
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/03/10/MR-King/"
                             >
-                                <span class="left arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </span>
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">跟手动画</span>
-                                    <span class="post-nav-item">Prev posts</span>
+                                    <span class="post-nav-title-item">跟手动画原理</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
                                 </span>
                             </a>
                         </div>
-                    
                     
                 </div>
             
@@ -369,7 +350,7 @@
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">跟手动画原理</div>
+        <div class="page-title">跟手动画</div>
         <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%9F%E6%89%8B%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86"><span class="nav-text">跟手动画原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86"><span class="nav-text">前置知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Intersection-Observer"><span class="nav-text">1.Intersection Observer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Emittery"><span class="nav-text">2.Emittery</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Emittery-%E7%AE%80%E5%8D%95%E8%80%8C%E7%8E%B0%E4%BB%A3%E7%9A%84%E5%BC%82%E6%AD%A5%E4%BA%8B%E4%BB%B6%E5%8F%91%E5%B0%84%E5%99%A8"><span class="nav-text">Emittery: 简单而现代的异步事件发射器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Emittery%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-text">Emittery常用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#on-eventName-eventName-listener-%E7%BB%91%E5%AE%9A%E7%9B%91%E5%90%AC"><span class="nav-text">on(eventName | eventName[], listener)绑定监听</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#off-eventName-eventName-listener-%E8%A7%A3%E9%99%A4%E7%9B%91%E5%90%AC"><span class="nav-text">off(eventName | eventName[], listener)解除监听</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#once-eventName-eventName-then-listener-%E7%9B%91%E5%90%AC%E6%89%A7%E8%A1%8C%E5%90%8E%E8%A7%A3%E9%99%A4%E7%9B%91%E5%90%AC"><span class="nav-text">once(eventName | eventName[]).then(listener)监听执行后解除监听</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-resize-observer-polyfill"><span class="nav-text">3.resize-observer-polyfill</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B7%9F%E6%89%8B%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0-Scroom"><span class="nav-text">跟手动画实现-Scroom</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="nav-text">主要原理：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0"><span class="nav-text">具体实现</span></a></li></ol></li></ol></li></ol>
 
     </div>
