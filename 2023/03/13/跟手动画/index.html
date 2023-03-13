@@ -210,8 +210,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-13 10:36:29</span>
-            <span class="mobile">2023-03-13 10:36</span>
+            <span class="pc">2023-03-13 10:41:21</span>
+            <span class="mobile">2023-03-13 10:41</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -247,12 +247,7 @@
 <div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> target = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.target&quot;</span>)</span><br><span class="line"></span><br><span class="line"> <span class="comment">//IntersectionObserver构造器的callback函数</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">callback</span> = (<span class="params">entries</span>) =&gt;&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(entries[<span class="number">0</span>].<span class="property">intersectionRatio</span>)</span><br><span class="line">  <span class="keyword">if</span> (entries[<span class="number">0</span>].<span class="property">intersectionRatio</span> &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">style</span>.<span class="property">backgroundColor</span> = <span class="string">&#x27;#333&#x27;</span>;</span><br><span class="line">    <span class="comment">// </span></span><br><span class="line">    <span class="comment">// observer.disconnect()</span></span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">style</span>.<span class="property">backgroundColor</span> = <span class="string">&#x27;#fff&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//IntersectionObserver构造器的option函数</span></span><br><span class="line"> <span class="keyword">const</span> option = &#123;</span><br><span class="line">     <span class="attr">root</span>:root <span class="comment">//用作边界的视口，默认为视口</span></span><br><span class="line">     rootMargin：<span class="string">&quot;0px 0px 0px 0px&quot;</span> <span class="comment">//改变边界视口的检测范围，类似于margin</span></span><br><span class="line">     threshold：[<span class="number">0</span>,<span class="number">0.1</span>]或者<span class="number">0</span> <span class="comment">//数组或具体值,当相交比例越过这些值，触发callback函数</span></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//通过IntersectionObserver构造器构造一个新的IntersectionObserver对象</span></span><br><span class="line"><span class="keyword">let</span> observer = <span class="keyword">new</span> <span class="title class_">IntersectionObserver</span>(callback,option)</span><br><span class="line"></span><br><span class="line"> <span class="comment">//该对象拥有四个方法</span></span><br><span class="line">observer.<span class="title function_">observe</span>(target)<span class="comment">//绑定需要检测的元素target，可绑定多个</span></span><br><span class="line">observer.<span class="title function_">observe</span>(target2)</span><br><span class="line">observer.<span class="title function_">unobserve</span>(target)<span class="comment">//解绑对应元素</span></span><br><span class="line">observer.<span class="title function_">takeRecords</span>()<span class="comment">// 返回监听的数组</span></span><br><span class="line">observer.<span class="title function_">disconnected</span>()<span class="comment">//解除所有的监听</span></span><br></pre></td></tr></table></figure></div>
 
 <p>[线上demo]<a class="link"   target="_blank" rel="noopener" href="https://code.juejin.cn/pen/7206227129149685792" >https://code.juejin.cn/pen/7206227129149685792 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://github.com/MR-King-hub/MR-King-hub.github.io/blob/master/UML%20%E5%9B%BE%20(2).jpg"
-                      alt="UML 图 (2)"
-                ></p>
+<p>![](UML 图 (2).jpg)</p>
 <p><code>intersectionRect</code>属性，会返回target与检测视口相交的高度。</p>
 <h3 id="2-Emittery"><a href="#2-Emittery" class="headerlink" title="2.Emittery"></a><strong>2.Emittery</strong></h3><h1 id="Emittery-简单而现代的异步事件发射器"><a href="#Emittery-简单而现代的异步事件发射器" class="headerlink" title="Emittery: 简单而现代的异步事件发射器"></a><strong>Emittery</strong><strong>: 简单而现代的异步事件发射器</strong></h1><p>关于异步实现的原理和优点待补充</p>
 <p>与<code>EventEmitter</code>（同步发射器）的异同点待补充</p>
@@ -271,17 +266,12 @@
 <h3 id="主要原理："><a href="#主要原理：" class="headerlink" title="主要原理："></a>主要原理：</h3><div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 跟手动画的容器高度一般是大于视口的</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;wrapper&quot;</span> <span class="attr">style</span>=<span class="string">&quot;height: 3000px&quot;</span>&gt;</span></span><br><span class="line">//播放动画元素通过sticky布局在滚动中固定位置</span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">&quot;player&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">style</span>=<span class="string">&quot;width: 80%; position: sticky; top: 0; margin: 0 auto&quot;</span></span></span><br><span class="line"><span class="tag">  &gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>上文已经介绍<code>intersectionRect</code>属性（target与检测视口相交的高度），但<code>intersectionRect</code>最大交叉高度小于监测视口&amp;Target高度，滑动处在下图位置时，<code>intersectionRect</code>的值将固定为600px（监测视口），此时动画的进度无法计算</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://github.com/MR-King-hub/MR-King-hub.github.io/blob/master/UML%20%E5%9B%BE%20(3).jpg"
-                      alt="UML 图 (3)"
-                ></p>
+<p>![](UML 图 (3).jpg)</p>
 <p>利用<code>rootMargin</code>属性，将监测视口扩充到与Target高度一致，就可以实现滚动过程<code>intersectionRect</code>实时变化，能够完整监测滚动过程.</p>
 <p>计算目标与默认浏览器视口的差值：</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const bottomMargin =  target.clientHeight - window.innerHeight;</span><br><span class="line">rootMargin = `0px 0px $&#123;bottomMargin &#125;px 0px`;</span><br></pre></td></tr></table></figure></div>
 
-<p>![UML 图 (4)](..&#x2F;..&#x2F;public&#x2F;images&#x2F;UML 图 (2).jpg )</p>
+<p>![](UML 图 (4).jpg )</p>
 <p>由于跟手动画触发要在容器划出监测视口触发，简单的判断方式就是，相交区域target top小于target元素的top，证明target已经有一部分划出监测视口。</p>
 <p><code>isIntersecting</code> boolean值代表target是否还在监测视口未完全划出</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">isProgressing=``boundingClientRect.top &lt; intersectionRect.top`` &amp;&amp; isIntersecting;</span><br></pre></td></tr></table></figure></div>
@@ -319,26 +309,6 @@
 
             
 
-            
-                <div class="article-nav">
-                    
-                    
-                        <div class="article-next">
-                            <a class="next"
-                            rel="next"
-                            href="/2023/03/10/MR-King/"
-                            >
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item">跟手动画原理</span>
-                                    <span class="post-nav-item">Next posts</span>
-                                </span>
-                                <span class="right arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                    
-                </div>
             
 
 
